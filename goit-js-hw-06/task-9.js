@@ -1,5 +1,7 @@
 import users from "./users.js";
 
+// Массив имен(поле name) людей, отсортированных в зависимости от количества их друзей(поле friends)
+
 const getNamesSortedByFriendsCount = (users) =>
   users
     .sort((a, b) => a.friends.length - b.friends.length)

@@ -1,5 +1,7 @@
 import users from "./users.js";
 
+// Получить массив всех умений всех пользователей(поле skills), при этом не должно быть повторяющихся умений и они должны быть отсортированы в алфавитном порядке.
+
 const getSortedUniqueSkills = (users) =>
   users
     .reduce((acc, { skills }) => acc.concat(skills), [])

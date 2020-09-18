@@ -1,5 +1,7 @@
 import users from "./users.js";
 
+// Массив имен всех пользователей у которых есть друг с указанным именем.
+
 const getUsersWithFriend = (users, friendName) => {
   return users
     .filter(({ friends }) => friends.includes(friendName))

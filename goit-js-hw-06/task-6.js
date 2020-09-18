@@ -1,5 +1,7 @@
 import users from "./users.js";
 
+// Получить массив пользователей попадающих в возрастную категорию от min до max лет(поле age).
+
 const getUsersWithAge = (users, min, max) =>
   users.filter((user) => min <= user.age && user.age <= max);
 
