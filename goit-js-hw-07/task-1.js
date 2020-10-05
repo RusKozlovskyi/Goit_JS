@@ -10,3 +10,16 @@
 
 const totalCategories = document.querySelectorAll(".item");
 console.log(`В списке ${totalCategories.length} категории.`);
+
+let list = document.querySelector("#categories");
+let items = document.querySelectorAll(".item");
+
+items.forEach((node) => {
+  let h2 = node.querySelector("h2");
+  let li = node.querySelectorAll("li");
+
+  console.log(
+    `Категория: ${h2.textContent}.
+Кол-во элементов: ${li.length} элемента(ов)`
+  );
+});
