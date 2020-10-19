@@ -62,7 +62,7 @@ function closeLightbox(event) {
 }
 
 const clickKey = (event) => {
-  if (event.code === 27) {
+  if (event.keyCode === 27) {
     refs.lightbox.classList.remove("is-open");
   }
 };
