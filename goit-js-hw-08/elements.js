@@ -61,8 +61,10 @@ function closeLightbox(event) {
   }
 }
 
-function clickKey(event) {
-  if (event.code === "Escape") {
-    onClickHandlerClose();
+const clickKey = (event) => {
+  if (event.code === 27) {
+    refs.lightbox.classList.remove("is-open");
   }
-}
+};
+
+document.addEventListener("keydown", clickKey);
